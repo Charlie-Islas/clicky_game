@@ -53,11 +53,10 @@ class App extends Component {
       shuffledCats=shuffleArray(shuffledCats);
       this.setState(shuffledCats);
       if(currentScore===shuffledCats.length){
-        alert("Congratulations! You have clicked on all cats! You win the game, raaawr!");
         for(var i=0;i<shuffledCats.length;i++){
           shuffledCats[i].clicked=false;
         }
-        instruction='Click on any feline to start over!';
+        instruction='Congratulations! You win the game, raaawr! Click on any feline to start over!';
         currentScore=0;
       }
       
@@ -67,11 +66,10 @@ class App extends Component {
       for(var i=0;i<shuffledCats.length;i++){
         shuffledCats[i].clicked=false;
       }
-      instruction='You guessed incorrectly!';
+      //instruction='You guessed incorrectly!';
       currentScore=0;
       shuffledCats=shuffleArray(shuffledCats);
-      alert("You have lost! Be devoured by the Roman Lions!");
-      instruction='Click on any feline to start over!';
+      instruction='You have lost! Be devoured by the Roman Lions! Click on any feline to start over!';
       this.setState(shuffledCats);
     }
   };
