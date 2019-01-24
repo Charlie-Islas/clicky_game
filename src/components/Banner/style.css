@@ -1,0 +1,14 @@
+body{
+    background-color:black;
+    color:white;
+}
+
+h1,h2{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.banner{
+    width:100%;
+    background-image: url("https://media1.giphy.com/media/lnee9BK5vB5MA/200.webp?cid=3640f6095c4670af4c614a73590dc4fa");
+}
